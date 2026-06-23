@@ -38,7 +38,7 @@ public class MouseLook : MonoBehaviour
 
         Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
 
-        // 🔥 KEY FIX: scale-aware offset
+        // scale-aware offset
         float playerScale = player.lossyScale.y;
 
         float scaledHeight = height * playerScale * heightMultiplier;

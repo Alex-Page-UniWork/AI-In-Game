@@ -56,7 +56,7 @@ public class GameManagerScene3 : MonoBehaviour
 
         Debug.Log("YOU WIN!");
 
-        // destroy enemies ONCE safely
+        // destroy enemies
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         for (int i = 0; i < enemies.Length; i++)
@@ -64,7 +64,7 @@ public class GameManagerScene3 : MonoBehaviour
             Destroy(enemies[i]);
         }
 
-        // IMPORTANT: stop spawner logic indirectly
+        
         Time.timeScale = 0f;
     }
 }

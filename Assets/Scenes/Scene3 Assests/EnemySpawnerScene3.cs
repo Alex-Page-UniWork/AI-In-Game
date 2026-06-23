@@ -14,7 +14,7 @@ public class EnemySpawnerScene3 : MonoBehaviour
 
     void Update()
     {
-        // 🚨 STOP SPAWNING IF GAME ENDS OR IS WON
+        // STOP SPAWNING IF GAME ENDS OR IS WON
         if (GameManagerScene3.instance != null &&
             (GameManagerScene3.instance.gameWon || GameManagerScene3.instance.gameOver))
         {
